@@ -1,8 +1,5 @@
 // department.component.ts
 import { Component, OnInit } from '@angular/core';
-import { DepartmentService } from 'src/app/services/department.service';
-
-
 
 @Component({
  selector: 'app-department',
@@ -10,16 +7,13 @@ import { DepartmentService } from 'src/app/services/department.service';
  styleUrls: ['./department.component.css']
 })
 export class DepartmentComponent implements OnInit {
- departments!: Department[];
 
- constructor(private departmentService: DepartmentService) { }
+
+ constructor() { }
 
  ngOnInit(): void {
-    this.getDepartments();
+  
  }
 
- getDepartments(): void {
-    this.departmentService.getDepartments()
-      .subscribe(departments => this.departments = departments);
+
  }
-}

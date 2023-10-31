@@ -26,7 +26,7 @@ import { PrivacyPolicyComponent } from './Compoments/privacy-policy/privacy-poli
     EmployeeComponent,
     ContactComponent,
     LicensingComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
   ],
   imports: [
     BrowserModule,
