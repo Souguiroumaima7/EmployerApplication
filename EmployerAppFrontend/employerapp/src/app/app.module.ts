@@ -13,6 +13,7 @@ import { EmployeeComponent } from './Compoments/employee/employee.component';
 import { ContactComponent } from './Compoments/contact/contact.component';
 import { LicensingComponent } from './Compoments/licensing/licensing.component';
 import { PrivacyPolicyComponent } from './Compoments/privacy-policy/privacy-policy.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PrivacyPolicyComponent } from './Compoments/privacy-policy/privacy-poli
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
